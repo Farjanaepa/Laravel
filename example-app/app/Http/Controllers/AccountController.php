@@ -86,7 +86,17 @@ class AccountController extends Controller
     }
 
     public function profile(){
-       return view('font.account.profile');
+
+
+        $id = Auth::user()->id;
+
+        $user = User::where('id',$id)->first();
+
+       
+
+       return view('font.account.profile',[
+        'user' => $user
+       ]);
     }
 
     
