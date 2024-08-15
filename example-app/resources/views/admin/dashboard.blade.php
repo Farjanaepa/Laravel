@@ -21,7 +21,7 @@
                 @include('font.message')
                 <div class="card border-0 shadow mb-4">
                     <div class="card-body">
-                        Welcome Administrator!!
+                       <p class="h2">Welcome Administrator!!</p>
 
                     </div>
                 
